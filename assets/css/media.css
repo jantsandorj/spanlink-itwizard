@@ -7,5 +7,118 @@
 -------------------------------------------------------------------*/
 
 /* Main */
+@media (min-width: 1000.98px) and (max-width: 1170px) {
+    ​html, .comment_wrap, .comment_card_wrap {width: 100%;}
+    .header-wrap {gap: 50px; padding: 0 25px;}
+    .chart p {font-size: 1rem; letter-spacing: -1px; text-transform: uppercase; color: #222222; font-weight: 500;}
+    .banner-wrap, .charts, .dashboard, .team_info, .inner_company {padding: 0 25px;}
+    .comment_left {width: 60%; padding-left: 25px;}
+    .comment_wrap {gap: 20px;}
+    .comment_right div {width: 90%;}
+    
+}
+@media (max-width: 1000.98px) {
+    .banner-wrap, .charts, .dashboard, .team_info, .inner_company {padding: 0 10px;}
+    .comment_wrap {flex-direction: column;}
+    .header-wrap {gap: 50px; padding: 0 10px;}
+    .logo {font-size: 18px;}
+    .menu {gap: 15px;}
+    nav ul {gap: 15px;}
+    nav ul li a {font-size: 15px;}
+    .banner-wrap {background:#f6624f; height: 300px; padding: 0 10px;}
+    .banner-title h1 {font-size: 1.5rem; line-height: 2rem;}
+    .banner-title h1:first-child {font-size: 1.5rem;}
+    .banner-static {height: 100%; width: 350px; align-items: center;}
+    .banner-static ul li {height: 35px;}
+    .username p {font-size: 0.8rem; }
+    .order_4_5 {font-size: 22px; color: #b0b0b0; font-weight: 900; margin-left: 20px;}
+    .user_prize p {font-size: 0.8rem; color:#333333; font-weight: 300;}
+    .chart p {font-size: 0.8rem;}
+    .charts {gap: 50px; width: 100%; height: 250px;}
+    .pie_charts {gap: 0px;}
+    .charts-title h2 {font-size: 1.5rem}
+    .chart {width: 80%;}
+    .chart span {font-size: 0.6rem;}
+    .chart img {width: 80%;}
+    .static_card h4 {font-size: 0.8rem; padding: 1.5rem;}
+    .static_card p {font-size: 1.3rem; line-height:1px; padding-left: 1.5rem;}
+    .static_card span {font-size: 0.8rem;}
+    .dashboard {flex-wrap: wrap; justify-content: center;}
+    .static_card {width: 30%; height: 13rem}
+    .static_card:first-child {background: url(/images/folder.png) 80% 80% / 30%  no-repeat, #e9defb }
+    .static_card:nth-child(2) {background: url(/images/chart.png) no-repeat 80% 80% / 30%, #daedcf }
+    .static_card:last-child {background: url(/images/laptop.png) no-repeat 80% 80% / 30%, #fff0bd }
+    .team_info h2 {font-size: 1.5rem;}
+    .team_info p {font-size: 0.8rem;}
+    .team_info button span {font-size: 0.8rem;}
+    .team_info {background: url(/images/intro.png) no-repeat center top, #cfe4ff; border-radius: 10px; display: flex; flex-direction: column; height: 302px; justify-content: center; align-items: flex-start; padding-left: 40px; gap: 18px;}
+    .introduction_wrap {gap: 30px; margin-top: 30px;}
+    .inner_company {flex-direction: column; gap: 15px;} 
+    .intro_video {margin: 0 auto;}
+    .intro_video iframe {height: 360px;}
+    .intro_title {display: flex; flex-direction: column; align-items: center; gap: 0; padding-top: 30px;}        
+    .intro_title h2 {font-size: 1.5rem;}
+    .intro_title>div {text-align: center;}
+    .intro_title>div>p {font-size:0.8rem;}
+    .comment_wrap {padding: 30px 0px; gap: 30px;}
+    .comment_left, .comment_right {padding:0 10px;}
+    .comment_card_wrap {width: 100%; justify-content: space-evenly;}
+    .comment_card {width: 30%;}
+    .comment_title {width:fit-content; gap: 10px;}
+    .comment_title h3 {font-size: 1rem;}
+    .comment_title .comment_btn {font-size: 0.6rem;}
+    .right_comment {width: 100%;}
+    .user_comment_right {font-size: 1rem;}
+    .date_comment_right {font-size: 0.8rem;}
+    .contact p {font-size: 0.8rem; line-height:1rem }
+}
+@media (max-width: 767.98px) {
+    .menu {display: none;}
+    .menu_hamburger {display: block;}
+    .banner-inner {flex-direction: column; padding: 15px; gap: 10px;}
+    .charts {flex-direction: column; height: auto; gap: 0; padding: 20px 10px;}
+    .charts-title {background: none; width: 100%; height: auto; padding: 20px 0 ;}
+    .charts-title h2 {text-align: center; width: 100%;}
+    .intro_video {width: 100%; margin: 0 auto;}
+    .intro_video iframe {width: 100%;}
+    .footer_wrap {padding: 20px 0;}
+    .footer_wrap > div {display: block; text-align: center;}
+    
+}
+@media (max-width: 575.98px) {
+    ​.menu_hamburger {display: block;}
+    .header-wrap {height: auto;}
+    .banner-title h1 {font-size: 1rem; line-height: 1.5rem;}
+    .banner-title h1:first-child {font-size: 1rem;}
+    .user_prize p {font-size: 0.5rem; color:#333333; font-weight: 300;}
+    .chart p {font-size: 0.7rem;}
+    .username p {font-size: 0.5rem; }
+    .order_4_5 {font-size: 1rem; color: #b0b0b0; font-weight: 900; margin-left: 15px;}
+    .user_info p {font-size: 0.5rem;}
+    .user_prize img, .user_info img {width: 10px; height: 10px; border-radius: 50%;}
+    .username img {width: 10px; height: 10px; margin-left: 15px;}
+    .charts-title h2 {font-size: 1rem}
+    .pie_charts {justify-content: space-evenly; width: 100%;}
+    .chart img {width: 6rem;}
+    .dashboard {gap: 5px;}
+    .static_card {width: 90%; height: 150px;}
+    .static_card:first-child {background: url(/images/folder.png) 80% 50%/ 20%  no-repeat, #e9defb }
+    .static_card:nth-child(2) {background: url(/images/chart.png) no-repeat 80% 50% / 20%, #daedcf }
+    .static_card:last-child {background: url(/images/laptop.png) no-repeat 80% 50%/ 20%, #fff0bd }
+    .team_info > * {width: 100%;}
+    .team_info {text-align: center; height: 150px; gap: 10px;}
+    .team_info button {margin: 0 auto; width:20%; gap: 5px; height: auto;}
+    .team_info {background: url(/images/intro.png) no-repeat 105% 100% / 40% , #cfe4ff; border-radius: 10px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;}
+    .team_info h2 {font-size: 1rem;}
+    .team_info p {font-size: 0.6rem; line-height: normal;}
+    .team_info button span {font-size: 0.6rem;}
+    .company_info {height: auto;}
+    .intro_title {padding: 15px;}
+    .intro_title h2 {font-size: 1rem;}
+    .intro_title>div>p {font-size:0.6rem; line-height: normal;}
+}
+@media screen and (max-width: 483px) {
+    ​.menu_hamburger {display: block;}
+}
 
 /* Sub Page */

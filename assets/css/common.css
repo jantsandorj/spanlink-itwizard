@@ -20,6 +20,17 @@ nav ul li a:last-child img{width: 14px; height: 20px;}
 .registration button:first-child{background-color: #dfdfdf; border-radius: 10px;}
 .registration button:last-child{background-color: #333333; border-radius: 10px; color: #ffffff;}
 .b_btns span{font-size: 14px; letter-spacing: 0px; text-transform: uppercase; font-weight: 300;}
+
+.menu_hamburger {display: none;}
+label.hamburger {background: #fff; width: 30px; height: 40px; position: relative; cursor: pointer;}
+input#hamburger {display:none}
+.line {position: absolute; height: 3px; width: 100%; background: #000; transition: 0.5s;}
+.line:nth-child(1) { top: 10px; }
+.line:nth-child(2) { top: 20px; }
+.line:nth-child(3) { top: 30px; }
+#hamburger:checked + .hamburger .line:nth-child(1){transform: translateY(12px) rotate(-45deg);}
+#hamburger:checked + .hamburger .line:nth-child(2){opacity:0;}
+#hamburger:checked + .hamburger .line:nth-child(3){transform: translateY(-12px) rotate(45deg);}
 /* header end */
 
 /* footer start */
