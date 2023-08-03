@@ -7,10 +7,87 @@
 -------------------------------------------------------------------*/
 
 /* contents start */
-
     /* main top start (banner) */
+.banner-wrap {height: 420px; display: flex; background:  url(/images/banner.png) no-repeat bottom 0px left 43.3%, #f6624f;}
+.banner-inner {align-items: center; justify-content: space-between;}
+.banner-title h1 {font-size: 40px; letter-spacing: -1px; line-height: 58px; text-transform: uppercase; color:#ffffff;}
+.banner-title h1:first-child {font-weight: 100; font-size: 36px;}
+.banner-static {height: 285px; width: 409px;}
+.banner-static ul {display: flex; flex-direction: column; justify-content: space-between; gap: 5px;}
+.banner-static ul li {background-color: #ffffff; border-radius: 15px; display: flex; align-items: center; height:53px; padding-right: 35px; justify-content: space-between;}
+.banner-static ul li>div {display: flex; align-items: center; gap: 5px;}
+.username {width: 53.6%;}
+.username img {width: 24px; height: 28px; margin-left: 15px;}
+.username p, .order_4_5, .user_prize p, .user_info p {letter-spacing: 0px; line-height: 58px; text-transform: uppercase;}
+.username p {font-size: 16px; }
+.order_4_5 {font-size: 22px; color: #b0b0b0; font-weight: 900; margin-left: 20px;}
+.user_prize p {font-size: 14px; color:#333333; font-weight: 300;}
+.user_prize img, .user_info img {width: 20px; height: 20px; border-radius: 50%;}
     /* main top end (banner) */
 
+    /* main section start (statics) */
+.statics {display: flex; flex-direction: column;}
+        /* main section start (statics - charts) */
+.charts {display: flex; height: 415px;  align-items: center; gap: 142px;}
+.charts-title {width: 320px; height: 154px; background: url(/images/ingpng.png) no-repeat right 0px; display: flex; align-items: center;}
+.charts-title h2 {font-size: 32px; letter-spacing: -1px; text-transform: uppercase; color: #333333; font-weight: 800;}
+.pie_charts {display: flex; gap: 73px;}
+.chart {display: flex; flex-direction: column; align-items: center; gap: 11px;}
+.chart p {font-size: 18px; letter-spacing: -1px; text-transform: uppercase; color: #222222; font-weight: 500;}
+.chart>button {width: 79px; height: 29px; background-color: #e8e7e7; border-radius: 2px;}
+.chart span {font-size: 14px; letter-spacing: 0px; text-transform: uppercase; color: #333333;}
+        /* main section end (statics - charts) */
+
+        /* main section start (statics - dashboard) */
+.dashboard {display: flex; gap: 20px;}
+.static_card {width: 376px; height: 309px; border-radius: 10px;}
+.static_card:first-child {background: url(/images/folder.png) no-repeat right 41px bottom 25px, #e9defb }
+.static_card:nth-child(2) {background: url(/images/chart.png) no-repeat right 42px bottom 25px, #daedcf }
+.static_card:last-child {background: url(/images/laptop.png) no-repeat right 43px bottom 28px, #fff0bd }
+.static_card h4 {font-size: 20px; letter-spacing: 0px; text-transform: uppercase; color: #3d3b3f; font-weight: 500; padding: 47px 0 0 40px;}
+.static_card p {font-size: 36px; letter-spacing: -1px; line-height: 68px; text-transform: uppercase; color: #222222; font-weight: 700; padding-left: 40px;}
+.static_card span {font-size: 20px; letter-spacing: 0px;}
+        /* main section end (statics - dashboard) */
+    
+    /* main section end (statics) */
+
+    /* main section start (introduction) */
+.introduction_wrap {margin-top: 61px; display: flex; flex-direction: column; gap: 80px;}
+        /* main section start (introduction - team_info) */
+.team_info {background: url(/images/intro.png) no-repeat bottom -44px right -20px, #cfe4ff; border-radius: 10px; display: flex; flex-direction: column; height: 302px; justify-content: center; align-items: flex-start; padding-left: 40px; gap: 18px;}
+.team_info h2 {font-size: 32px; letter-spacing: -1px; color: #222222; font-weight: 800;}
+.team_info p {font-size: 16px; letter-spacing: 0px; color: #222222; font-weight: 500; line-height: 24px; text-transform: uppercase;}
+.team_info button {background-color: #ffffff; height: 47px; width: 153px; border-radius: 10px; margin-top: 13px; display: flex; align-items: center; justify-content: center; gap:40px ;}
+.team_info button span {font-size: 16px; letter-spacing: 0px; color: #333333; font-weight: 500; line-height: 23px; text-transform: uppercase;}
+        /* main section end (introduction - team_info) */
+        
+        /* main section start (introduction - company_info) */
+.company_info {background-color: #e9ecef; height: 528px; display: flex; align-items: center;}
+.inner_company {justify-content: space-between;}
+.intro_title {display: flex; flex-direction: column; justify-content: center; gap: 15px;}        
+.intro_title h2 {font-size: 32px; letter-spacing: -1px; color: #222222; font-weight: 800;}
+.intro_title>div>p {font-size: 16px; letter-spacing: 0px; color: #222222; font-weight: 500; line-height: 24px; text-transform: uppercase;}
+.intro_video iframe {border-radius: 10px; border: none;}
+        /* main section end (introduction - company_info) */
+    /* main section end (introduction) */
+    
+    /* main section start (comment) */
+.comment_wrap {justify-content: space-between; padding-top: 70px; gap: 60px; padding-bottom: 95px;}
+.comment_title {display: flex; padding-bottom: 50px; height: 20px; width: 137px; justify-content: space-between;}
+.comment_title h3 {font-size: 22px; letter-spacing: -1px; text-transform: uppercase; color: #222222; font-weight: 500;}
+.comment_title .comment_btn {font-size: 14px; letter-spacing: 0px; text-transform: uppercase; color: #666666; font-weight: 300; line-height: 22px;}
+.comment_card_wrap {display: flex; height: 215px; width: 741px; gap: 8px;}
+.comment_card {border-radius: 13px; border: solid 1px #fbaba1; height: 213px; width: 240px; padding: 25px 40px 20px 23px ; display: flex; flex-direction: column; gap: 15px; justify-content: space-between;}
+.user {display: flex; align-items: center; gap: 15px;}
+.user img {width: 47px;}
+.user .name {font-size: 16px; letter-spacing: 0px; text-transform: uppercase; color: #222222; font-weight: bold; line-height: 22px;}
+.user_comment {height: 100%; font-size: 15px; letter-spacing: -1px; text-transform: uppercase; color: #222222; font-weight: 400;line-height: 20px}
+.date_comment {font-size: 14px; letter-spacing: 0px; text-transform: uppercase; color: #888888; font-weight: 400; line-height: 22px;}
+.border {border-bottom: 1px solid #dbdbdb; border-top: 1px solid #dbdbdb;}
+.right_comment {width: 365px; height: 70px; display: flex; flex-direction: column; justify-content: center; }
+.user_comment_right {font-size: 16px; letter-spacing: 0px; text-transform: uppercase; color: #222222; line-height: 22px;}
+.date_comment_right {font-size: 14px; letter-spacing: 0px; text-transform: uppercase; color: #888888; font-weight: 400; line-height: 22px;}
+    /* main section end (comment) */
 /* contents end */
 
 /* aside.floating start */
