@@ -51,3 +51,12 @@ new Chart(ctx2, {
     cutout: "78%",
   },
 });
+
+function openNav() {
+  document.getElementById("side_menu").style.width = "60%";
+  document.getElementById("close_btn").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("side_menu").style.width = "0";
+}

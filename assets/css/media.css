@@ -10,6 +10,7 @@
 @media (min-width: 1000.98px) and (max-width: 1170px) {
     ​html, .comment_wrap, .comment_card_wrap {width: 100%;}
     .header-wrap {gap: 50px; padding: 0 25px;}
+    .side_wrap {width: 0; height: 0;}
     .chart p {font-size: 1rem; letter-spacing: -1px; text-transform: uppercase; color: #222222; font-weight: 500;}
     .banner-wrap, .charts, .dashboard, .inner_company {padding: 0 25px;}
     .team_info {margin: 0 25px; width: auto;}
@@ -25,6 +26,7 @@
     .header-wrap {gap: 50px; padding: 0 40px;}
     .logo {font-size: 18px;}
     .menu {gap: 15px;}
+    .side_wrap {width: 0; height: 0;}
     nav ul {gap: 10px;}
     nav ul li a {font-size: 14px;}
     .banner-wrap {background:#f6624f; height: 300px;}
@@ -75,9 +77,16 @@
     .user_comment_right {font-size: 1rem;}
     .date_comment_right {font-size: 0.8rem;}
     .contact p {font-size: 0.8rem; line-height:1rem }
+
 }
 @media (max-width: 767.98px) {
-    .menu {display: none;}
+    #side_menu {height: 100%; width: 0px; position: fixed; z-index: 5; top: 0; right: 0; overflow-x: hidden; transition: 1s; flex-direction: column; align-items: end; justify-content: flex-start; background-color:#E9ECEF;}
+    #close_btn {height: 80%; width: 100%; position: absolute; top: 20px; left: -20px; color: #222222; text-align: end}
+    .skip {width: 80%; padding: 60px 20px 10px;}
+    .skip .lists {flex-direction: column; width: 100%; align-items: end; color: #fff;}
+    .skip .list_item {border: 1px #222222 solid; padding: 8px 10px; border-radius: 10px; width: 100%;}
+    .registration {flex-direction: column; height: 100%; padding:0 20px; width: 100%; align-items: flex-end;}
+    .registration .b_btns {width: 80%; justify-content: end;}
     .menu_hamburger {display: block;}
     .banner-inner {flex-direction: column; padding: 15px; gap: 10px;}
     .pie_charts {padding: 0 40px;}

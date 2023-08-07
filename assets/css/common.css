@@ -10,8 +10,8 @@
 /* header start */
 .header-wrap{display:flex; align-items:center ;height:82px; gap: 295px; justify-content: space-between;}
 .logo{font-size: 26px; text-transform:uppercase; font-weight:800;}
-.menu{display: flex; gap: 60px; align-items: center;}
-nav ul{display:flex; align-items: center; gap: 31px;}
+.menu{display: flex; gap: 60px; align-items: center; justify-content: space-between; width: max-content;}
+nav ul{display:flex; align-items: center; gap: 30px;}
 nav ul li a{font-size:17px; letter-spacing:-1px; text-transform:uppercase; font-weight: 500;}
 nav ul li a:last-child{display: flex;}
 nav ul li a:last-child img{width: 14px; height: 20px;}
@@ -28,9 +28,6 @@ input#hamburger {display:none}
 .line:nth-child(1) { top: 10px; }
 .line:nth-child(2) { top: 20px; }
 .line:nth-child(3) { top: 30px; }
-#hamburger:checked + .hamburger .line:nth-child(1){transform: translateY(12px) rotate(-45deg);}
-#hamburger:checked + .hamburger .line:nth-child(2){opacity:0;}
-#hamburger:checked + .hamburger .line:nth-child(3){transform: translateY(-12px) rotate(45deg);}
 /* header end */
 
 /* footer start */

@@ -26,7 +26,7 @@
                 <div>
                     <a href="#" class="logo">Tagoplus</a>
                 </div>
-                <div class="menu_hamburger">
+                <div class="menu_hamburger" onclick="openNav()" class="close_btn">
                     <input type="checkbox" id="hamburger">
                     <label for="hamburger" class="hamburger">
                         <span class="line"></span>
@@ -34,7 +34,7 @@
                         <span class="line"></span>
                     </label>
                 </div>
-                <div class="menu">
+                <div class="menu" id="side_menu">
                     <nav class="skip">
                         <ul class="lists">
                             <li class="list_item"><a href="#">서비스 소개</a></li>
@@ -52,6 +52,9 @@
                     <div class="registration">
                         <button class="b_btns"><span>로그인</span></button>
                         <button class="b_btns"><span>회원가입</span></button>
+                    </div>
+                    <div id="close_btn" style="display: none;">
+                        <span onclick="closeNav()">&#x2715</span>
                     </div>
                 </div>
             </div>
