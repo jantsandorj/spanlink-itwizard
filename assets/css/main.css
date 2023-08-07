@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url(fonts.css);
+@import url(../css/fonts.css);
 
 /*-------------------------------------------------------------------
     파일정의: Main page style
@@ -8,7 +8,7 @@
 
 /* contents start */
     /* main top start (banner) */
-.banner-wrap {height: 420px; display: flex; background:  url(/images/banner.png) no-repeat bottom 0px left 43.3%, #f6624f;}
+.banner-wrap {height: 420px; display: flex; background:  url(../../images/banner.png) no-repeat bottom 0px left 43.3%, #f6624f;}
 .banner-inner {align-items: center; justify-content: space-between;}
 .banner-title h1 {font-size: 40px; letter-spacing: -1px; line-height: 58px; text-transform: uppercase; color:#ffffff;}
 .banner-title h1:first-child {font-weight: 100; font-size: 36px;}
@@ -29,10 +29,12 @@
 .statics {display: flex; flex-direction: column;}
         /* main section start (statics - charts) */
 .charts {display: flex; height: 415px;  align-items: center; gap: 142px;}
-.charts-title {width: 320px; height: 154px; background: url(/images/ingpng.png) no-repeat right 0px; display: flex; align-items: center;}
+.charts-title {width: 320px; height: 154px; background: url(../../images/ingpng.png) no-repeat right 0px; display: flex; align-items: center;}
 .charts-title h2 {font-size: 32px; letter-spacing: -1px; text-transform: uppercase; color: #333333; font-weight: 800;}
 .pie_charts {display: flex; gap: 73px;}
-.chart {display: flex; flex-direction: column; align-items: center; gap: 11px;}
+.chart {display: flex; flex-direction: column; align-items: center; gap: 11px;  position: relative;}
+.my_chart, .my_chart1, .my_chart2 {width: 190px; height: 190px;}
+.chart .percent {position: absolute; top: 1%; display: flex; width: 190px; height: 190px; justify-content: center; align-items: center; font-size: 24px; letter-spacing: -1px; color: #222222; font-weight: bold;}
 .chart p {font-size: 18px; letter-spacing: -1px; text-transform: uppercase; color: #222222; font-weight: 500;}
 .chart>button {width: 79px; height: 29px; background-color: #e8e7e7; border-radius: 2px;}
 .chart span {font-size: 14px; letter-spacing: 0px; text-transform: uppercase; color: #333333;}
@@ -41,9 +43,9 @@
         /* main section start (statics - dashboard) */
 .dashboard {display: flex; gap: 20px;}
 .static_card {width: 376px; height: 309px; border-radius: 10px;}
-.static_card:first-child {background: url(/images/folder.png) no-repeat right 41px bottom 25px, #e9defb }
-.static_card:nth-child(2) {background: url(/images/chart.png) no-repeat right 42px bottom 25px, #daedcf }
-.static_card:last-child {background: url(/images/laptop.png) no-repeat right 43px bottom 28px, #fff0bd }
+.static_card:first-child {background: url(../../images/folder.png) no-repeat right 41px bottom 25px, #e9defb }
+.static_card:nth-child(2) {background: url(../../images/chart.png) no-repeat right 42px bottom 25px, #daedcf }
+.static_card:last-child {background: url(../../images/laptop.png) no-repeat right 43px bottom 28px, #fff0bd }
 .static_card h4 {font-size: 20px; letter-spacing: 0px; text-transform: uppercase; color: #3d3b3f; font-weight: 500; padding: 47px 0 0 40px;}
 .static_card p {font-size: 36px; letter-spacing: -1px; line-height: 68px; text-transform: uppercase; color: #222222; font-weight: 700; padding-left: 40px;}
 .static_card span {font-size: 20px; letter-spacing: 0px;}
@@ -54,7 +56,7 @@
     /* main section start (introduction) */
 .introduction_wrap {margin-top: 61px; display: flex; flex-direction: column; gap: 80px;}
         /* main section start (introduction - team_info) */
-.team_info {background: url(/images/intro.png) no-repeat bottom -44px right -20px, #cfe4ff; border-radius: 10px; display: flex; flex-direction: column; height: 302px; justify-content: center; align-items: flex-start; padding-left: 40px; gap: 18px;}
+.team_info {background: url(../../images/intro.png) no-repeat bottom -44px right -20px, #cfe4ff; border-radius: 10px; display: flex; flex-direction: column; height: 302px; justify-content: center; align-items: flex-start; padding-left: 40px; gap: 18px;}
 .team_info h2 {font-size: 32px; letter-spacing: -1px; color: #222222; font-weight: 800;}
 .team_info p {font-size: 16px; letter-spacing: 0px; color: #222222; font-weight: 500; line-height: 24px; text-transform: uppercase;}
 .team_info button {background-color: #ffffff; height: 47px; width: 153px; border-radius: 10px; margin-top: 13px; display: flex; align-items: center; justify-content: center; gap:40px ;}

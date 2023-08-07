@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url(fonts.css);
+@import url(../css/fonts.css);
 
 /*-------------------------------------------------------------------
     파일정의: Responsive css on all pages
@@ -11,21 +11,23 @@
     ​html, .comment_wrap, .comment_card_wrap {width: 100%;}
     .header-wrap {gap: 50px; padding: 0 25px;}
     .chart p {font-size: 1rem; letter-spacing: -1px; text-transform: uppercase; color: #222222; font-weight: 500;}
-    .banner-wrap, .charts, .dashboard, .team_info, .inner_company {padding: 0 25px;}
+    .banner-wrap, .charts, .dashboard, .inner_company {padding: 0 25px;}
+    .team_info {margin: 0 25px; width: auto;}
     .comment_left {width: 60%; padding-left: 25px;}
+    .pie_charts {gap: 10px;}
     .comment_wrap {gap: 20px;}
     .comment_right div {width: 90%;}
     
 }
 @media (max-width: 1000.98px) {
-    .banner-wrap, .charts, .dashboard, .team_info, .inner_company {padding: 0 10px;}
+    .banner-wrap, .dashboard, .team_info, .inner_company {padding: 0 40px;}
     .comment_wrap {flex-direction: column;}
-    .header-wrap {gap: 50px; padding: 0 10px;}
+    .header-wrap {gap: 50px; padding: 0 40px;}
     .logo {font-size: 18px;}
     .menu {gap: 15px;}
-    nav ul {gap: 15px;}
-    nav ul li a {font-size: 15px;}
-    .banner-wrap {background:#f6624f; height: 300px; padding: 0 10px;}
+    nav ul {gap: 10px;}
+    nav ul li a {font-size: 14px;}
+    .banner-wrap {background:#f6624f; height: 300px;}
     .banner-title h1 {font-size: 1.5rem; line-height: 2rem;}
     .banner-title h1:first-child {font-size: 1.5rem;}
     .banner-static {height: 100%; width: 350px; align-items: center;}
@@ -34,35 +36,37 @@
     .order_4_5 {font-size: 22px; color: #b0b0b0; font-weight: 900; margin-left: 20px;}
     .user_prize p {font-size: 0.8rem; color:#333333; font-weight: 300;}
     .chart p {font-size: 0.8rem;}
-    .charts {gap: 50px; width: 100%; height: 250px;}
-    .pie_charts {gap: 0px;}
+    .charts {gap: 50px; width: 100%; height: max-content; padding: 40px;}
+    .pie_charts {gap: 0px; width: 100%; justify-content: space-between;}
     .charts-title h2 {font-size: 1.5rem}
-    .chart {width: 80%;}
+    .my_chart, .my_chart1, .my_chart2 {width: 100%; height: 100%;}
+    .chart .percent {width: 100%; aspect-ratio: 1/1; height: auto;}
+    .chart {width: 30%;}
     .chart span {font-size: 0.6rem;}
     .chart img {width: 80%;}
     .static_card h4 {font-size: 0.8rem; padding: 1.5rem;}
     .static_card p {font-size: 1.3rem; line-height:1px; padding-left: 1.5rem;}
     .static_card span {font-size: 0.8rem;}
-    .dashboard {flex-wrap: wrap; justify-content: center;}
+    .dashboard {flex-wrap: wrap; justify-content: space-between;}
     .static_card {width: 30%; height: 13rem}
-    .static_card:first-child {background: url(/images/folder.png) 80% 80% / 30%  no-repeat, #e9defb }
-    .static_card:nth-child(2) {background: url(/images/chart.png) no-repeat 80% 80% / 30%, #daedcf }
-    .static_card:last-child {background: url(/images/laptop.png) no-repeat 80% 80% / 30%, #fff0bd }
+    .static_card:first-child {background: url(../../images/folder.png) 80% 80% / 30%  no-repeat, #e9defb }
+    .static_card:nth-child(2) {background: url(../../images/chart.png) no-repeat 80% 80% / 30%, #daedcf }
+    .static_card:last-child {background: url(../../images/laptop.png) no-repeat 80% 80% / 30%, #fff0bd }
     .team_info h2 {font-size: 1.5rem;}
     .team_info p {font-size: 0.8rem;}
     .team_info button span {font-size: 0.8rem;}
-    .team_info {background: url(/images/intro.png) no-repeat center top, #cfe4ff; border-radius: 10px; display: flex; flex-direction: column; height: 302px; justify-content: center; align-items: flex-start; padding-left: 40px; gap: 18px;}
+    .team_info {background: url(../../images/intro.png) no-repeat center top, #cfe4ff; border-radius: 10px; display: flex; flex-direction: column; height: 302px; justify-content: center; align-items: flex-start; padding-left: 40px; gap: 18px; margin: 0 40px; width: auto;}
     .introduction_wrap {gap: 30px; margin-top: 30px;}
     .inner_company {flex-direction: column; gap: 15px;} 
     .intro_video {margin: 0 auto;}
     .intro_video iframe {height: 360px;}
-    .intro_title {display: flex; flex-direction: column; align-items: center; gap: 0; padding-top: 30px;}        
+    .intro_title {display: flex; flex-direction: column; align-items: center; gap: 0;}        
     .intro_title h2 {font-size: 1.5rem;}
     .intro_title>div {text-align: center;}
     .intro_title>div>p {font-size:0.8rem;}
-    .comment_wrap {padding: 30px 0px; gap: 30px;}
+    .comment_wrap {padding: 30px 40px; gap: 30px; margin: 0; width: auto;}
     .comment_left, .comment_right {padding:0 10px;}
-    .comment_card_wrap {width: 100%; justify-content: space-evenly;}
+    .comment_card_wrap {width: 100%; justify-content: space-between; height: max-content;}
     .comment_card {width: 30%;}
     .comment_title {width:fit-content; gap: 10px;}
     .comment_title h3 {font-size: 1rem;}
@@ -76,13 +80,24 @@
     .menu {display: none;}
     .menu_hamburger {display: block;}
     .banner-inner {flex-direction: column; padding: 15px; gap: 10px;}
+    .pie_charts {padding: 0 40px;}
     .charts {flex-direction: column; height: auto; gap: 0; padding: 20px 10px;}
     .charts-title {background: none; width: 100%; height: auto; padding: 20px 0 ;}
     .charts-title h2 {text-align: center; width: 100%;}
     .intro_video {width: 100%; margin: 0 auto;}
     .intro_video iframe {width: 100%;}
+    .comment_card_wrap {height: max-content;}
+    .comment_card {padding: 20px; height: 170px;}
+    .user img {width: 25px;}
+    .user .name {font-size: 0.8rem;}
+    .user_comment {font-size: 0.8rem; line-height: normal;}
+    .date_comment {font-size: 0.6rem; line-height: normal;}
+    .right_comment {height: fit-content; padding: 10px;}
+    .user_comment_right {font-size: 0.8rem; line-height: normal;}
+    .date_comment_right {font-size: 0.6rem; }
     .footer_wrap {padding: 20px 0;}
     .footer_wrap > div {display: block; text-align: center;}
+    .copyright p {font-size: 0.6rem;}
     
 }
 @media (max-width: 575.98px) {
@@ -101,24 +116,66 @@
     .pie_charts {justify-content: space-evenly; width: 100%;}
     .chart img {width: 6rem;}
     .dashboard {gap: 5px;}
-    .static_card {width: 90%; height: 150px;}
-    .static_card:first-child {background: url(/images/folder.png) 80% 50%/ 20%  no-repeat, #e9defb }
-    .static_card:nth-child(2) {background: url(/images/chart.png) no-repeat 80% 50% / 20%, #daedcf }
-    .static_card:last-child {background: url(/images/laptop.png) no-repeat 80% 50%/ 20%, #fff0bd }
+    .static_card {width: 100%; height: 150px;}
+    .static_card:first-child {background: url(../../images/folder.png) 80% 50%/ 20%  no-repeat, #e9defb }
+    .static_card:nth-child(2) {background: url(../../images/chart.png) no-repeat 80% 50% / 20%, #daedcf }
+    .static_card:last-child {background: url(../../images/laptop.png) no-repeat 80% 50%/ 20%, #fff0bd }
     .team_info > * {width: 100%;}
     .team_info {text-align: center; height: 150px; gap: 10px;}
     .team_info button {margin: 0 auto; width:20%; gap: 5px; height: auto;}
-    .team_info {background: url(/images/intro.png) no-repeat 105% 100% / 40% , #cfe4ff; border-radius: 10px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;}
+    .team_info {background: url(../../images/intro.png) no-repeat 105% 100% / 40% , #cfe4ff; border-radius: 10px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;}
     .team_info h2 {font-size: 1rem;}
     .team_info p {font-size: 0.6rem; line-height: normal;}
     .team_info button span {font-size: 0.6rem;}
     .company_info {height: auto;}
-    .intro_title {padding: 15px;}
+    .inner_company {padding: 30px 0;}
     .intro_title h2 {font-size: 1rem;}
     .intro_title>div>p {font-size:0.6rem; line-height: normal;}
+    .intro_video iframe {height:200px;}
+    .user img {width: 30px;}
+    .comment_title {padding-bottom: 30px;}
+    .comment_card_wrap {height: max-content;}
+    .comment_card {padding: 10px; height: auto;}
+    .user .name {font-size: 0.8rem;}
+    .user_comment {font-size: 0.7rem; line-height: normal;}
+    .date_comment {font-size: 0.6rem; line-height: normal;}
+    .right_comment {height: fit-content; padding: 10px;}
+    .user_comment_right {font-size: 0.8rem; line-height: normal;}
+    .date_comment_right {font-size: 0.6rem; line-height: normal;}
+    .footer_wrap{height: fit-content;}
+    .contact p {font-size: 0.6rem;}
+    .copyright { padding:0;}
+    .copyright p {font-size: 0.6rem;}
 }
 @media screen and (max-width: 483px) {
     ​.menu_hamburger {display: block;}
+    .header-wrap {padding: 0 40px;}
+    .banner-wrap {height: fit-content; padding: 20px 40px;}
+    .banner-inner {width: 100%; padding: 0;}
+    .banner-static {width: 100%;}
+    .banner-static ul li {height: 25px;}
+    .charts-title {padding: 10px 0;}
+    .pie_charts { gap: 10px;}
+    .chart {width: 30%; overflow: hidden; text-overflow: ellipsis;}
+    .chart .percent {font-size: 0.8rem;}
+    .chart p {font-size: 0.5rem; text-overflow:ellipsis; overflow: hidden; white-space: nowrap;}
+    .comment_card_wrap {flex-wrap: wrap;}
+    .comment_card {width: 100%;}
+    .team_info {padding: 0;}
+    .team_info p {white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+    .inner_company {padding: 20px 40px;}
+    .intro_title {padding: 0;}
+    .intro_video iframe {height: fit-content;}
+    .comment_title h3 {font-size: 0.8rem;}
+    .comment_btn {font-size: 0.6rem}
+    .user {gap: 5px;}
+    .user img {width: 20px;}
+    .user .name {font-size: 0.7rem;}
+    .user_comment {font-size: 0.6rem; line-height: normal;}
+    .user_comment_right {font-size: 0.6rem; line-height: normal;}
+    .chart>button {width: fit-content; height: fit-content; padding: 3px 10px;}
+    .chart>button span {line-height: normal; height: 100%; display: block;}
+    .team_info button {width: fit-content; padding: 5px 10px;}
 }
 
 /* Sub Page */
