@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="title" content="SPANLINK" />
+    <meta name="keywords" content="SPANLINK" />
+    <meta name="description" content="SPANLINK" />
+
+    <title>SPANLINK</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/media.css">
+
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- GNB-->
+        <header id="head" class="head">
+            <div class="header-wrap container">
+                <div>
+                    <a href="#" class="logo">Tagoplus</a>
+                </div>
+                <div class="menu_hamburger" onclick="openNav()" class="close_btn">
+                    <input type="checkbox" id="hamburger">
+                    <label for="hamburger" class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </label>
+                </div>
+                <div class="menu" id="side_menu">
+                    <nav class="skip">
+                        <ul class="lists">
+                            <li class="list_item"><a href="#">서비스 소개</a></li>
+                            <li class="list_item"><a href="#">퍼블리싱의 뢰</a></li>
+                            <li class="list_item"><a href="#">포트폴리오</a></li>
+                            <li class="list_item"><a href="#">고객센터</a></li>
+                            <li class="list_item">
+                                <a href="#">
+                                    <img src="../images/profile.png" alt="Profile template" />
+                                    마이페이지
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="registration">
+                        <button class="b_btns"><span>로그인</span></button>
+                        <button class="b_btns"><span>회원가입</span></button>
+                    </div>
+                    <div id="close_btn" style="display: none;">
+                        <span onclick="closeNav()">&#x2715</span>
+                    </div>
+                </div>
+            </div>
+        </header> 
+        <!-- //GNB -->
+
+        <!-- 본문 -->
+        <main id="conts" class="conts">
+            <!-- Banner -->
+            <div class="banner-wrap">
+                <div class="banner-inner container">
+                    <div class="banner-title">
+                        <h1>복잡한 퍼블리싱 이젠</h1>
+                        <h1>전문가에게 맡기세요!</h1>
+                    </div>
+                    <div class="banner-static">
+                        <ul class="lists">
+                            <li class="list_item">
+                              <div class="username">
+                                <img src="../images/GoldenMedal.jpg" alt="Golden Medal">
+                                <p>여성의류 쇼핑몰</p>
+                              </div>
+                              <div class="user_prize">
+                                <img src="../images/Won.jpg" alt="won">
+                                <p>5,000,000</p>
+                              </div>
+                              <div class="user_info">
+                                <img src="../images/profileTemp.jpg" alt="profile template">
+                                <p>김**</p>
+                              </div>
+                            </li>
+                            <li class="list_item">
+                              <div class="username">
+                                <img src="../images/SilverMedal.jpg" alt="Silver Medal">
+                                <p>강남성모병원</p>
+                              </div>
+                              <div class="user_prize">
+                                <img src="../images/Won.jpg" alt="won emblem">
+                                <p>3,250,000</p>
+                              </div>
+                              <div class="user_info">
+                                <img src="../images/profileTemp.jpg" alt="profile template">
+                                <p>허**</p>            
+                              </div>
+                            </li>
+                            <li class="list_item">
+                              <div class="username">
+                                <img src="../images/BronzeMedal.jpg" alt="Bronze Medal">
+                                <p>밀알복지재단 30주년 ..</p>
+                              </div>
+                              <div class="user_prize">
+                                <img src="../images/Won.jpg" alt="won emblem">
+                                <p>2,715,000</p>
+                              </div>
+                              <div class="user_info">
+                                <img src="../images/profileTemp.jpg" alt="profile template">
+                                <p>최**</p>
+                              </div>
+                            </li>
+                            <li class="list_item">
+                              <div class="username">
+                                <span class="order_4_5">4</span>
+                                <p>탱그램 라이팅 이더</p>
+                              </div>
+                              <div class="user_prize">
+                                <img src="../images/Won.jpg" alt="won emblem">
+                                <p>4,853,000</p>
+                              </div>
+                              <div class="user_info">
+                                <img src="../images/profileTemp.jpg" alt="profile template">
+                                <p>조**</p>
+                              </div>
+                            </li>
+                            <li class="list_item">
+                              <div class="username">
+                                <span class="order_4_5">5</span>
+                                <p>한화 사이언스 챌린지</p>
+                              </div>
+                              <div class="user_prize">
+                                <img src="../images/Won.jpg" alt="won emblem">
+                                <p>3,580,000</p>
+                              </div>
+                              <div class="user_info">
+                                <img src="../images/profileTemp.jpg" alt="profile template">
+                                <p>박**</p>
+                              </div>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+            </div> 
+            <!-- //Banner -->
+
+            <!-- conts -->
+            <div class="conts-wrap">
+                <!-- statics -->
+                <section class="statics container">
+                    <div class="charts">
+                        <div class="charts-title">
+                            <h2>진행중인 프로젝트</h2>
+                        </div>
+                        <div class="pie_charts">
+                            <div class="chart">
+                                <canvas class="my_chart"></canvas>
+                                <span class="percent">85<p>%</p></span>
+                                <p>여성의류 쇼핑몰 보헤미안</p>
+                                <button class="b_btns"><span>계약완료</span></button>
+                            </div>
+                            <div class="chart">
+                                <canvas class="my_chart1"></canvas>
+                                <span class="percent">70<p>%</p></span>
+                                <p>강남 맑은 치과</p>
+                                <button class="b_btns"><span>접수완료</span></button>
+                            </div>
+                            <div class="chart">
+                                <canvas class="my_chart2"></canvas>
+                                <span class="percent">63<p>%</p></span>
+                                <p>현대지에프홀딩스</p>
+                                <button class="b_btns"><span>접수중</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard">
+                        <div class="static_card">
+                            <h4>총 계약된 프로젝트</h4>
+                            <p>2,580<span>건</span></p>
+                        </div>
+                        <div class="static_card">
+                            <h4>현재 진행중인 프로젝트</h4>
+                            <p>1,358<span>건</span></p>
+                        </div>
+                        <div class="static_card">
+                            <h4>완료된 프로젝트</h4>
+                            <p>1,752<span>건</span></p>
+                        </div>
+                    </div>
+                </section>
+                <!-- //statics -->
+                <!-- introduction -->
+                <section class="introduction_wrap">
+                    <div class="team_info container">
+                        <h2>서비스 소개</h2>
+                        <p>누적 거래 402만 건! 700여 개의 카테고리와 6만여 개 서비스에서<br>필요한 모든 전문가를 만나보세요.</p>
+                        <button><span>자세히 보기</span><span>></span></button>
+                    </div>
+                    <div class="company_info">
+                        <div class="container inner_company">
+                            <div class="intro_title">
+                                <h2>유튜브 홍보용 영상</h2>
+                                <div>
+                                    <p>누적 거래 402만 건!</p>
+                                    <p>700여 개의 카테고리와 6만여 개 서비스에서</p>
+                                    <p>필요한 모든 전문가를 만나보세요.</p>
+                                </div>
+                            </div>
+                            <div class="intro_video">
+                                <iframe width="680" height="390" src="https://www.youtube.com/embed/9GvJHBVzi-Y" title="Company Video Introduction"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- //introduction -->
+                <!-- comment -->
+                <section class="comment_wrap container">
+                    <div class="comment_left">
+                        <div class="comment_title">
+                            <h3>이용후기</h3>
+                            <p class="comment_btn">더보기 ></p>
+                        </div>
+                        <div class="comment_card_wrap">
+                            <div class="comment_card">
+                                <div class="user">
+                                    <img src="../images/pro1.png" alt="Profile pictures" />
+                                    <p class="name">김*국</p>
+                                </div>
+                                <p class="user_comment">복잡한 코딩 한번에 해결했어요 너무 감사합니다.</p>
+                                <p class="date_comment">2023.07.30</p>
+                            </div>
+                            <div class="comment_card">
+                                <div class="user">
+                                    <img src="../images/pro2.png" alt="Profile pictures" />
+                                    <p class="name">박*영</p>
+                                </div>
+                                <p class="user_comment">단가도 좋고 코딩 수준도 높고 무엇보다 빨라서 좋았어요 또이용하겠습니다.</p>
+                                <p class="date_comment">2023.07.30</p>
+                            </div>
+                            <div class="comment_card">
+                                <div class="user">
+                                    <img src="../images/pro3.png" alt="Profile pictures" />
+                                    <p class="name">황*숙</p>
+                                </div>
+                                <p class="user_comment">복잡한 코딩 한번에 해결했어요 너무 감사합니다.</p>
+                                <p class="date_comment">2023.07.30</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment_right">
+                        <div class="comment_title">
+                            <h3>공지사항</h3>
+                            <p class="comment_btn">더보기 ></p>
+                        </div>
+                        <div class="border right_comment">
+                            <p class="user_comment_right">사이트가 새롭게 오픈되었습니다. 사이트가 새롭게 오픈..</p>
+                            <p class="date_comment_right">2023.07.30</p>
+                        </div>
+                        <div class="right_comment">
+                            <p class="user_comment_right">사이트가 새롭게 오픈되었습니다.</p>
+                            <p class="date_comment_right">2023.07.30</p>
+                        </div>
+                        <div class="border right_comment">
+                            <p class="user_comment_right">안드로이드 지원 중단 버전 안내</p>
+                            <p class="date_comment_right">2023.07.30</p>
+                        </div>
+                    </div>
+                    
+                </section>
+                <!-- //comment -->
+            </div>
+            <!-- //conts -->
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer_wrap container">
+                <div class="contact">
+                    <p>서울 금천구 가산디지털1로 5대륭테크노타운20차 402호</p>
+                    <p>TEL : 1644-5805</p>
+                </div>
+                <div class="contact">
+                    <p>사업자등록번호 : 113-86-13483</p>
+                    <p>통신판매번호 : 구로 제 2008-00086호</p>
+                    <p>대표 : 문양희</p>
+                    <p>개인정보관리책임자 : 조원호</p>
+                </div>
+                <div class="copyright">
+                    <p>Copyright @ 2008 타고플러스. All Right Reserved</p>
+                </div>
+            </div>
+        </footer>
+        <!-- //Footer -->
+    </div>
+</body>
+
+<!-- Script -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/contents.js"></script>
+
+</html>
