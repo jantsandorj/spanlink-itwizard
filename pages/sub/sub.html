@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta name="title" content="Project Name" />
+        <meta name="keywords" content="Project Name" />
+        <meta name="description" content="Project Name" />
+
+        <title>Project Name</title>
+
+        <!-- Style -->
+        <link rel="stylesheet" type="text/css" href="../../assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../../assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="../../assets/css/common.css">
+        <link rel="stylesheet" type="text/css" href="../../assets/css/media.css">
+        <link rel="stylesheet" type="text/css" href="../../assets/css/sub.css">
+
+    </head>
+    <body>
+        <!-- GNB -->
+        <header id="head" class="head">
+            <div class="header-wrap container">
+                <div>
+                    <a href="#" class="logo">Tagoplus</a>
+                </div>
+                <div class="menu_hamburger" onclick="openNav()" class="close_btn">
+                    <input type="checkbox" id="hamburger">
+                    <label for="hamburger" class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </label>
+                </div>
+                <div class="menu" id="side_menu">
+                    <nav class="skip">
+                        <ul class="lists">
+                            <li class="list_item"><a href="#" class="from-left link_hover">서비스 소개</a></li>
+                            <li class="list_item"><a href="#" class="from-left link_hover">퍼블리싱의 뢰</a></li>
+                            <li class="list_item"><a href="#" class="from-left link_hover">포트폴리오</a></li>
+                            <li class="list_item"><a href="#" class="from-left link_hover">고객센터</a></li>
+                            <li class="list_item">
+                                <a href="#" class="from-left link_hover">
+                                    <img src="../../images/profile.png" alt="Profile template" />
+                                    마이페이지
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="registration">
+                        <button class="b_btns"><span>로그인</span></button>
+                        <button class="b_btns"><span>회원가입</span></button>
+                    </div>
+                    <div id="close_btn" style="display: none;">
+                        <span onclick="closeNav()">&#x2715</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //GNB -->
+
+        <section id="subConts" class="sub_conts container">
+            <!-- Side menu -->
+            <div class="sub_side_menu_wrap">
+                <h2 class="sub_conts_menu_ttl">마이 페이지</h2>
+                <div class="sub_side_menu">
+                    <ul class="lists">
+                        <li ><a href="#">나의 프로젝트</a></li>
+                        <li><a href="#">거래서류</a></li>
+                        <li><a href="#">회원정보수정</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //Side menu -->
+            <!-- Content -->
+            <div class="sub_conts_wrap">
+                <h2 class="sub_conts_ttl">나의 프로젝트</h2>
+                <div class="date_header">
+                    <div class="sel_wrap">
+                        <select class="ui_selectbox sel_item" data-title="옵션선택">
+                            <option selected="">전체</option>
+                            <option selected="">item1</option>
+                        </select>
+                    </div>
+                    <input type="date" id="start_date" name="start_date">
+                    <span> - </span>
+                    <input type="date" id="end_date" name="end_date">
+                </div>
+                <div class="search_filter">
+                    <div class="sel_wrap">
+                        <select class="ui_selectbox sel_item" data-title="옵션선택">
+                            <option selected="">전체</option>
+                        </select>
+                    </div>
+                    <div class="sel_wrap">
+                        <select class="ui_selectbox sel_item" data-title="옵션선택">
+                            <option selected="">전체</option>
+                        </select>
+                    </div>
+                    <input type="text" id="search" name="search">
+                    <div class="btn_wrap">
+                        <button class="b_btn"><span>기본</span></button>
+                    </div>
+                </div>
+                <div class="sub_table_conts">
+                        <table>
+                            <colgroup>
+                                <col width="15%">
+                                <col width="15%">
+                                <col width="15%">
+                                <col width="15%">
+                                <col width="15%">
+                                <col width="15%">
+                                <col width="15%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>프로젝트 제목</th>
+                                    <th>진척률</th>
+                                    <th>계약금</th>
+                                    <th>증도금</th>
+                                    <th>잔금</th>
+                                    <th>등록일</th>
+                                    <th>상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>프로젝트 제목이 들어갑니다</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>2023-07-31</td>
+                                    <td>접수</td>
+                                </tr>
+                                <tr>
+                                    <td>프로젝트 제목이 들어갑니다</td>
+                                    <td>-</td>
+                                    <td><div><p>300000원</p><p>2023-08-22</p></div></td>
+                                    <td>-</td>
+                                    <td><div><p>300000원</p><p>-</p></div></td>
+                                    <td>2023-07-31</td>
+                                    <td>견적</td>
+                                </tr>
+                                <tr>
+                                    <td>프로젝트 제목이 들어갑니다</td>
+                                    <td>-</td>
+                                    <td><div><p>300000원</p><p>-</p></div></td>
+                                    <td><div><p>300000원</p><p>-</p></div></td>
+                                    <td><div><p>300000원</p><p>-</p></div></td>
+                                    <td>2023-07-31</td>
+                                    <td>계약</td>
+                                </tr>
+                                <tr>
+                                    <td>프로젝트 제목이 들어갑니다</td>
+                                    <td>10%</td>
+                                    <td><div><p>300000원</p><p>-</p></div></td>
+                                    <td><div><p>300000원</p><p>-</p></div></td>
+                                    <td><div><p>300000원</p><p>-</p></div></td>
+                                    <td>2023-07-31</td>
+                                    <td>접수</td>
+                                </tr>
+                                <tr>
+                                    <td>프로젝트 제목이 들어갑니다</td>
+                                    <td>-</td>
+                                    <td><div><p>300000원</p><p>-</p></div></td>
+                                    <td>-</td>
+                                    <td><div><p>300000원</p><p>-</p></div></td>
+                                    <td>2023-07-31</td>
+                                    <td>종료</td>
+                                </tr>
+                                <tr>
+                                    <td>프로젝트 제목이 들어갑니다</td>
+                                    <td>100%</td>
+                                    <td><div><p>300000원</p><p>-</p></div></td>
+                                    <td>-</td>
+                                    <td><div><p>300000원</p><p>-</p></div></td>
+                                    <td>2023-07-31</td>
+                                    <td>종료</td>
+                                </tr>
+                                <tr>
+                                    <td>프로젝트 제목이 들어갑니다</td>
+                                    <td>100%</td>
+                                    <td><div><p>300000원</p><p>-</p></div></td>
+                                    <td>-</td>
+                                    <td><div><p>300000원</p><p>-</p></div></td>
+                                    <td>2023-07-31</td>
+                                    <td>종료</td>
+                                </tr>
+                                <tr>
+                                    <td>프로젝트 제목이 들어갑니다</td>
+                                    <td>100%</td>
+                                    <td><div><p>300000원</p><p>-</p></div></td>
+                                    <td>-</td>
+                                    <td><div><p>300000원</p><p>-</p></div></td>
+                                    <td>2023-07-31</td>
+                                    <td>종료</td>
+                                </tr>
+                                <tr>
+                                    <td>프로젝트 제목이 들어갑니다</td>
+                                    <td>100%</td>
+                                    <td><div><p>300000원</p><p>-</p></div></td>
+                                    <td>-</td>
+                                    <td><div><p>300000원</p><p>-</p></div></td>
+                                    <td>2023-07-31</td>
+                                    <td>종료</td>
+                                </tr>
+                                <tr>
+                                    <td>프로젝트 제목이 들어갑니다</td>
+                                    <td>100%</td>
+                                    <td><div><p>300000원</p><p>-</p></div></td>
+                                    <td>-</td>
+                                    <td><div><p>300000원</p><p>-</p></div></td>
+                                    <td>2023-07-31</td>
+                                    <td>종료</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="paging_conts">
+                            <a href="javascript:void(0);" class="paging_start"><span class="blind">맨 앞으로</span></a>
+                            <a href="javascript:void(0);" class="paging_prev"><span class="blind">이전으로</span></a>
+                            <a href="javascript:void(0);">1</a>
+                            <a href="javascript:void(0);" class="on">2</a>
+                            <a href="javascript:void(0);">3</a>
+                            <a href="javascript:void(0);">4</a>
+                            <a href="javascript:void(0);" class="paging_next"><span class="blind">다음으로</span></a>
+                            <a href="javascript:void(0);" class="paging_end"><span class="blind">맨 뒤로</span></a>
+                        </div>
+                </div>    
+                
+            </div>
+            <!-- //Content -->
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer_wrap container">
+                <div class="contact">
+                    <p>서울 금천구 가산디지털1로 5대륭테크노타운20차 402호</p>
+                    <p>TEL : 1644-5805</p>
+                </div>
+                <div class="contact">
+                    <p>사업자등록번호 : 113-86-13483</p>
+                    <p>통신판매번호 : 구로 제 2008-00086호</p>
+                    <p>대표 : 문양희</p>
+                    <p>개인정보관리책임자 : 조원호</p>
+                </div>
+                <div class="copyright">
+                    <p>Copyright @ 2008 타고플러스. All Right Reserved</p>
+                </div>
+            </div>
+        </footer>
+        <!-- //Footer -->
+    </body>
+
+    <!-- Script -->
+    <script src="/assets/js/common.js"></script>
+</html>
