@@ -8,17 +8,19 @@
 -------------------------------------------------------------------*/
 
 /* header start */
-.header-wrap{display:flex; align-items:center ;height:82px; gap: 295px; justify-content: space-between;}
-.logo{font-size: 26px; text-transform:uppercase; font-weight:800;}
-.menu{display: flex; gap: 60px; align-items: center; justify-content: space-between; width: max-content;}
-nav ul{display:flex; align-items: center; gap: 30px;}
+.header-wrap {display:flex; align-items:center ;height:82px; justify-content: space-between;}
+.logo {font-size: 26px; text-transform:uppercase; font-weight:800;}
+.menu {display: flex; gap: 45px; align-items: center; justify-content: space-between; width: max-content;}
+nav ul {display:flex; align-items: center;}
+nav ul {position: relative;}
+
 nav ul li a{font-size:17px; letter-spacing:-1px; text-transform:uppercase; font-weight: 500;}
 nav ul li a:last-child{display: flex;}
 nav ul li a:last-child img{width: 14px; height: 20px;}
 .registration{display: flex; gap: 10px;}
-.b_btns{width: 77px; height: 37px;}
-.registration button:first-child{background-color: #dfdfdf; border-radius: 10px;}
-.registration button:last-child{background-color: #333333; border-radius: 10px; color: #ffffff;}
+.b_btns{width: 77px; height: 37px; border-radius: 10px;}
+.registration button:first-child{background-color: #dfdfdf;}
+.registration button:last-child{background-color: #333333; color: #ffffff;}
 .b_btns span{font-size: 14px; letter-spacing: 0px; text-transform: uppercase; font-weight: 300;}
 
 .menu_hamburger {display: none;}
@@ -38,3 +40,4 @@ input#hamburger {display:none}
 .copyright {padding-top: 8px;}
 .copyright p {font-size: 14px; letter-spacing: 0px; line-height: 26px; color: #666666; font-weight: 300;}
 /* footer end */
+

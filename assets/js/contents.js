@@ -1,4 +1,4 @@
-
+/* pie chart start */
 const ctx = document.getElementsByClassName("my_chart");
 new Chart(ctx, {
   type: "doughnut",
@@ -51,62 +51,72 @@ new Chart(ctx2, {
     cutout: "78%",
   },
 });
+/* pie chart end */
 
+/* Side menu start */
 function openNav() {
   document.getElementById("side_menu").style.width = "60%";
   document.getElementById("close_btn").style.display = "block";
 }
-
 function closeNav() {
   document.getElementById("side_menu").style.width = "0";
   document.getElementById("close_btn").style.display = "none";
 }
+/* Side menu end */
 
-
+/* Pie chart number counter start */
 var speed = 10;
-
-/* Call this function with a string containing the ID name to
- * the element containing the number you want to do a count animation on.*/
 function incEltNbr(id) {
   elt = document.getElementById(id)
   endNbr = document.getElementById(id).innerHTML.split("",2).join("")
   incNbrRec(0, endNbr, elt);
 }
-
-/*A recursive function to increase the number.*/
 function incNbrRec(i, endNbr, elt) {
   if (i <= endNbr) {
     elt.innerHTML = `${i}<p>%</p>`;
-    setTimeout(function() {//Delay a bit before calling the function again.
+    setTimeout(function() {
       incNbrRec(i + 1, endNbr, elt);
     }, speed);
   }
 }
-incEltNbr("percent_1")
-incEltNbr("percent_2")
-incEltNbr("percent_3")
+/* Pie chart number counter end */
 
-var set_speed = 1;
+/* Card number counter start */
 function cardEltNbr(id) {
   card_elt = document.getElementById(id)
   card_endNbr = document.getElementById(id).innerHTML.split("",5)
   delete_nan = card_endNbr.splice(1,1)
   nbrs = card_endNbr.join("").toLocaleString('en-US')
   card_incNbrRec(0, nbrs, card_elt);
-  console.log(nbrs);
-  // console.log(new_ar);
 }
-
-/*A recursive function to increase the number.*/
 function card_incNbrRec(i, endNbr, elt) {
   if (i <= endNbr) {
     const result = i.toLocaleString('en-US');
     elt.innerHTML = `${result}<span>건</span>`;
-    setTimeout(function() {//Delay a bit before calling the function again.
+    setTimeout(function() {
       card_incNbrRec(i + 10, endNbr, elt);
     }, 10);
   }
 }
-cardEltNbr("card_nbr_1")
-cardEltNbr("card_nbr_2")
-cardEltNbr("card_nbr_3")
+
+/* Card number counter end */
+
+/* Counter on scrol down start */
+const container = document.getElementById("dashboard")
+let activated = false
+window.addEventListener("scroll",function () {
+  if (this.scrollY > container.offsetTop - container.offsetHeight - 200 && activated === false) {
+      console.log(container.offsetTop);  
+      console.log(this.scrollY);  
+      cardEltNbr("card_nbr_1")
+      cardEltNbr("card_nbr_2")
+      cardEltNbr("card_nbr_3")
+      incEltNbr("percent_1")
+      incEltNbr("percent_2")
+      incEltNbr("percent_3")
+      activated = true
+  } else if (this.scrollY < container.offsetTop - container.offsetHeight - 500 || this.scrollY === 0 && activated === true) {
+    activated = false
+  }
+})
+  /* Counter on scrol down start */
