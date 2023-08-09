@@ -210,17 +210,34 @@
     .date_picker .date_input {position: relative; height: 35px; width: 100%;}
     .date_input .filter_date {width: 150px; padding-inline-start: 20px;}
     .date_input .filter_date {font-size: 0.8rem;}
+    .date_icon {margin-right: 20px;}
     table thead tr th {font-size: 0.8rem;}
     table tbody tr td {font-size: 0.8rem; letter-spacing: -1px; line-height: 35px; }    
     tbody tr {height: auto;}
     table tbody tr td:first-child{white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+    .paging_conts a{font-size: 0.8rem;}
     }
     @media (max-width: 767.98px) {
-    ​   .sub_conts .container {flex-direction: column;}
+        .sub_conts .container {flex-direction: column;}
+        .sub_side_menu_wrap {padding: 0 40px;}
+        .sub_side_menu .lists {flex-direction: row; width: 100%; justify-content: space-between;}
+        .sub_conts_wrap {padding: 0 40px;}
+        .sub_conts_wrap h2 {padding: 0 0 25px 0;}
+        table tbody tr td {font-size: 0.7rem; letter-spacing: -1px; line-height: normal; }  
     }
-    /* @media (max-width: 575.98px) {
-    ​
-    }
+    @media (max-width: 575.98px) {
+        .sub_conts_wrap .date_header {flex-direction: column;}
+        .sub_conts_wrap .date_header {height: auto; padding: 10px ;}
+        .date_header .date_picker {flex-direction: column; gap: 10px;}
+        .date_picker .mid_hyphen {display: none;}
+        .sub_conts_wrap .search_filter {flex-direction: column; padding-top: 15px; align-items: center;}
+        .payment_date, .invoice_date {font-size: 0.6rem;}
+        .payment_status {width: fit-content;}
+        .sub_conts_wrap tbody tr .payment_status span {width: 100%; padding: 0 5px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+    }   
     @media screen and (max-width: 483px) {
-    ​
-    } */
+        .sub_conts_wrap thead tr th {white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+        .sub_conts_wrap .payment {white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+        .sub_conts_wrap .payment_date {white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+        .sub_table_conts .paging_conts {padding: 25px; margin: 0;}
+    }
