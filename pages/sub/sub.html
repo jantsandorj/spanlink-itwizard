@@ -60,212 +60,214 @@
         </header>
         <!-- //GNB -->
 
-        <section id="subConts" class="sub_conts container">
-            <!-- Side menu -->
-            <div class="sub_side_menu_wrap">
-                <h2 class="sub_conts_menu_ttl">마이 페이지</h2>
-                <div class="sub_side_menu">
-                    <ul class="lists">
-                        <li ><a href="#">나의 프로젝트</a></li>
-                        <li><a href="#">거래서류</a></li>
-                        <li><a href="#">회원정보수정</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- //Side menu -->
-            <!-- Content -->
-            <div class="sub_conts_wrap">
-                <h2 class="sub_conts_ttl">나의 프로젝트</h2>
-                <div class="date_header">
-                    <div class="sel_wrap">
-                        <select class="ui_selectbox sel_item" data-title="옵션선택">
-                            <option selected="">전체</option>
-                            <option>item1</option>
-                        </select>
-                    </div>
-                    <div class="date_picker">
-                        <div class="date_input">
-                            <input type="date" id="start_date" name="start_date" class="filter_date" value="2023-05-15">
-                            <span class="date_icon"></span>
-                        </div>
-                        <span class="mid_hyphen"> - </span>
-                        <div class="date_input">
-                            <input type="date" id="start_date" name="start_date" class="filter_date" value="2023-04-14">
-                            <span class="date_icon"></span>
-                        </div>
+        <section id="subConts" class="sub_conts">
+            <div class="container">
+                <!-- Side menu -->
+                <div class="sub_side_menu_wrap">
+                    <h2 class="sub_conts_menu_ttl">마이 페이지</h2>
+                    <div class="sub_side_menu">
+                        <ul class="lists">
+                            <li ><a href="#">나의 프로젝트</a></li>
+                            <li><a href="#">거래서류</a></li>
+                            <li><a href="#">회원정보수정</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="search_filter">
-                    <div class="dropdown_sel_wrap">
+                <!-- //Side menu -->
+                <!-- Content -->
+                <div class="sub_conts_wrap">
+                    <h2 class="sub_conts_ttl">나의 프로젝트</h2>
+                    <div class="date_header">
                         <div class="sel_wrap">
                             <select class="ui_selectbox sel_item" data-title="옵션선택">
                                 <option selected="">전체</option>
                                 <option>item1</option>
                             </select>
                         </div>
-                        <div class="sel_wrap">
-                            <select class="ui_selectbox sel_item" data-title="옵션선택">
-                                <option selected="">전체</option>
-                                <option>item1</option>
-                            </select>
+                        <div class="date_picker">
+                            <div class="date_input">
+                                <input type="date" id="start_date" name="start_date" class="filter_date" value="2023-05-15">
+                                <span class="date_icon"></span>
+                            </div>
+                            <span class="mid_hyphen"> - </span>
+                            <div class="date_input">
+                                <input type="date" id="start_date" name="start_date" class="filter_date" value="2023-04-14">
+                                <span class="date_icon"></span>
+                            </div>
                         </div>
                     </div>
-                    <div class="search_wrap">
-                        <input type="text" id="search" name="search">
-                        <div class="btn_wrap">
-                            <button class="b_btn"></button>
+                    <div class="search_filter">
+                        <div class="dropdown_sel_wrap">
+                            <div class="sel_wrap">
+                                <select class="ui_selectbox sel_item" data-title="옵션선택">
+                                    <option selected="">전체</option>
+                                    <option>item1</option>
+                                </select>
+                            </div>
+                            <div class="sel_wrap">
+                                <select class="ui_selectbox sel_item" data-title="옵션선택">
+                                    <option selected="">전체</option>
+                                    <option>item1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="search_wrap">
+                            <input type="text" id="search" name="search">
+                            <div class="btn_wrap">
+                                <button class="b_btn"></button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="sub_table_conts">
-                        <table>
-                            <colgroup>
-                                <col width="22%" span="1" style="text-align: start;">
-                                    <col width="10%" span="1">
-                                        <col width="16%" span="1">
+                    <div class="sub_table_conts">
+                            <table>
+                                <colgroup>
+                                    <col width="22%" span="1" style="text-align: start;">
+                                        <col width="10%" span="1">
                                             <col width="16%" span="1">
                                                 <col width="16%" span="1">
-                                                    <col width="14%" span="1">
-                                                        <col width="10%" span="1">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th>프로젝트 제목</th>
-                                    <th>진척률</th>
-                                    <th>계약금</th>
-                                    <th>증도금</th>
-                                    <th>잔금</th>
-                                    <th>등록일</th>
-                                    <th>상태</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>프로젝트 제목이 들어갑니다</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>2023-07-31</td>
-                                    <td class="payment_status">
-                                        <span>접수</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>프로젝트 제목이 들어갑니다</td>
-                                    <td>-</td>
-                                    <td><div><p class="payment">300,000원</p><p class="payment_date">2023-08-22</p></div></td>
-                                    <td>-</td>
-                                    <td><div><p class="payment">300,000원</p><p class="payment_date">-</p></div></td>
-                                    <td>2023-07-31</td>
-                                    <td class="payment_status">
-                                        <span>견적</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>프로젝트 제목이 들어갑니다</td>
-                                    <td>-</td>
-                                    <td><div><p class="payment">300,000원</p><p class="payment_date">-</p></div></td>
-                                    <td><div><p class="payment">250,000원</p><p class="payment_date">-</p></div></td>
-                                    <td><div><p class="payment">300,000원</p><p class="payment_date">-</p></div></td>
-                                    <td>2023-07-31</td>
-                                    <td class="payment_status">
-                                        <span>계약</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>프로젝트 제목이 들어갑니다</td>
-                                    <td>10%</td>
-                                    <td><div><p class="payment">500,000원</p><p class="payment_date">2023-08-02</p></div></td>
-                                    <td><div><p class="payment">500,000원</p><p class="payment_date">2023-08-02</p></div></td>
-                                    <td><div><p class="payment">500,000원</p><p class="payment_date">2023-08-02</p></div></td>
-                                    <td>2023-07-31</td>
-                                    <td class="payment_status">
-                                        <span>진행중</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>프로젝트 제목이 들어갑니다</td>
-                                    <td>-</td>
-                                    <td><div><p class="payment">1,000,000원</p><p class="payment_date">2023-08-02</p></div></td>
-                                    <td><div><p class="payment">-</p><p class="payment_date"></p></div></td>
-                                    <td><div><p class="payment">1,000,000원</p><p class="payment_date">2023-08-02</p></div></td>
-                                    <td>2023-07-31</td>
-                                    <td class="payment_status">
-                                        <span>종료</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>프로젝트 제목이 들어갑니다</td>
-                                    <td>100%</td>
-                                    <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
-                                    <td><div><p class="payment">-</p><p class="payment_date"></p></div></td>
-                                    <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
-                                    <td>2023-07-31</td>
-                                    <td class="payment_status">
-                                        <span>종료</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>프로젝트 제목이 들어갑니다</td>
-                                    <td>100%</td>
-                                    <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
-                                    <td><div><p class="payment">-</p><p class="payment_date"></p></div></td>
-                                    <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
-                                    <td>2023-07-31</td>
-                                    <td class="payment_status">
-                                        <span>종료</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>프로젝트 제목이 들어갑니다</td>
-                                    <td>100%</td>
-                                    <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
-                                    <td><div><p class="payment"></p><p class="payment_date"></p></div></td>
-                                    <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
-                                    <td>2023-07-31</td>
-                                    <td class="payment_status">
-                                        <span>종료</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>프로젝트 제목이 들어갑니다</td>
-                                    <td>100%</td>
-                                    <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
-                                    <td><div><p class="payment"></p><p class="payment_date"></p></div></td>
-                                    <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
-                                    <td>2023-07-31</td>
-                                    <td class="payment_status">
-                                        <span>종료</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>프로젝트 제목이 들어갑니다</td>
-                                    <td>100%</td>
-                                    <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
-                                    <td><div><p class="payment"></p><p class="payment_date"></p></div></td>
-                                    <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
-                                    <td>2023-07-31</td>
-                                    <td class="payment_status">
-                                        <span>종료</span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="paging_conts">
-                            <a href="javascript:void(0);">1</a>
-                            <a href="javascript:void(0);">2</a>
-                            <a href="javascript:void(0);">3</a>
-                            <a href="javascript:void(0);">4</a>
-                            <a href="javascript:void(0);">5</a>
-                            <a href="javascript:void(0);">...</a>
-                            <a href="javascript:void(0);">100</a>
-                            <a href="javascript:void(0);" style="font-size: x-small;">&#9654;</a>
-                        </div>
-                </div>    
-                
+                                                    <col width="16%" span="1">
+                                                        <col width="14%" span="1">
+                                                            <col width="10%" span="1">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>프로젝트 제목</th>
+                                        <th>진척률</th>
+                                        <th>계약금</th>
+                                        <th>증도금</th>
+                                        <th>잔금</th>
+                                        <th>등록일</th>
+                                        <th>상태</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>프로젝트 제목이 들어갑니다</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>2023-07-31</td>
+                                        <td class="payment_status">
+                                            <span>접수</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>프로젝트 제목이 들어갑니다</td>
+                                        <td>-</td>
+                                        <td><div><p class="payment">300,000원</p><p class="payment_date">2023-08-22</p></div></td>
+                                        <td>-</td>
+                                        <td><div><p class="payment">300,000원</p><p class="payment_date">-</p></div></td>
+                                        <td>2023-07-31</td>
+                                        <td class="payment_status">
+                                            <span>견적</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>프로젝트 제목이 들어갑니다</td>
+                                        <td>-</td>
+                                        <td><div><p class="payment">300,000원</p><p class="payment_date">-</p></div></td>
+                                        <td><div><p class="payment">250,000원</p><p class="payment_date">-</p></div></td>
+                                        <td><div><p class="payment">300,000원</p><p class="payment_date">-</p></div></td>
+                                        <td>2023-07-31</td>
+                                        <td class="payment_status">
+                                            <span>계약</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>프로젝트 제목이 들어갑니다</td>
+                                        <td>10%</td>
+                                        <td><div><p class="payment">500,000원</p><p class="payment_date">2023-08-02</p></div></td>
+                                        <td><div><p class="payment">500,000원</p><p class="payment_date">2023-08-02</p></div></td>
+                                        <td><div><p class="payment">500,000원</p><p class="payment_date">2023-08-02</p></div></td>
+                                        <td>2023-07-31</td>
+                                        <td class="payment_status">
+                                            <span>진행중</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>프로젝트 제목이 들어갑니다</td>
+                                        <td>-</td>
+                                        <td><div><p class="payment">1,000,000원</p><p class="payment_date">2023-08-02</p></div></td>
+                                        <td><div><p class="payment">-</p><p class="payment_date"></p></div></td>
+                                        <td><div><p class="payment">1,000,000원</p><p class="payment_date">2023-08-02</p></div></td>
+                                        <td>2023-07-31</td>
+                                        <td class="payment_status">
+                                            <span>종료</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>프로젝트 제목이 들어갑니다</td>
+                                        <td>100%</td>
+                                        <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
+                                        <td><div><p class="payment">-</p><p class="payment_date"></p></div></td>
+                                        <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
+                                        <td>2023-07-31</td>
+                                        <td class="payment_status">
+                                            <span>종료</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>프로젝트 제목이 들어갑니다</td>
+                                        <td>100%</td>
+                                        <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
+                                        <td><div><p class="payment">-</p><p class="payment_date"></p></div></td>
+                                        <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
+                                        <td>2023-07-31</td>
+                                        <td class="payment_status">
+                                            <span>종료</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>프로젝트 제목이 들어갑니다</td>
+                                        <td>100%</td>
+                                        <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
+                                        <td><div><p class="payment"></p><p class="payment_date"></p></div></td>
+                                        <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
+                                        <td>2023-07-31</td>
+                                        <td class="payment_status">
+                                            <span>종료</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>프로젝트 제목이 들어갑니다</td>
+                                        <td>100%</td>
+                                        <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
+                                        <td><div><p class="payment"></p><p class="payment_date"></p></div></td>
+                                        <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
+                                        <td>2023-07-31</td>
+                                        <td class="payment_status">
+                                            <span>종료</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>프로젝트 제목이 들어갑니다</td>
+                                        <td>100%</td>
+                                        <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
+                                        <td><div><p class="payment"></p><p class="payment_date"></p></div></td>
+                                        <td><div><p class="payment">250,000원</p><p class="payment_date">2023-08-02</p></div></td>
+                                        <td>2023-07-31</td>
+                                        <td class="payment_status">
+                                            <span>종료</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="paging_conts">
+                                <a href="javascript:void(0);">1</a>
+                                <a href="javascript:void(0);">2</a>
+                                <a href="javascript:void(0);">3</a>
+                                <a href="javascript:void(0);">4</a>
+                                <a href="javascript:void(0);">5</a>
+                                <a href="javascript:void(0);">...</a>
+                                <a href="javascript:void(0);">100</a>
+                                <a href="javascript:void(0);" style="font-size: x-small;">&#9654;</a>
+                            </div>
+                    </div>    
+                    
+                </div>
+                <!-- //Content -->
             </div>
-            <!-- //Content -->
         </section>
 
         <!-- Footer -->

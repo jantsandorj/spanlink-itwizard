@@ -9,8 +9,9 @@
 /* common */
 
 /* Sub contents css start*/
-.sub_conts {display: flex; justify-content: space-between;}
-.sub_conts_wrap {width: 950px;}
+.sub_conts {border-top: 1px solid #cccccc}
+.sub_conts .container {display: flex; justify-content: space-between;}
+.sub_conts_wrap {max-width: 950px; width: 100%;}
     /* Sub contents > side menu css start*/
 .sub_conts_menu_ttl {font-size: 25px; letter-spacing: -1px; text-transform: uppercase; color: #333333; font-weight: bold; padding-top: 60px; padding-bottom: 30px; border-bottom: 2px #6d6d6d solid;} 
 .sub_side_menu ul {display: flex; flex-direction: column;}
@@ -34,20 +35,21 @@ input[type="date"] {width: 190px; height: 100%; border-radius: 8px; padding-inli
         /* Sub contents  > main conts > date header css end*/
         
         /* Sub contents  > main conts > search css start*/
-.search_filter {display: flex; justify-content: flex-end; padding-top: 25px; gap: 8px;}
+.search_filter {display: flex; justify-content: flex-end; padding-top: 25px; gap: 8px; width: 100%;}
 .dropdown_sel_wrap {display: flex; gap: 5px;}
 .search_filter .sel_wrap {width: 105px; height: 35px; border-radius: 5px; position: relative; border: #d0d0d0 1px solid;}
 .search_wrap {display: flex; gap: 5px;}
-#search {border: #d0d0d0 1px solid; border-radius: 5px; width: 200px; height: 35px;}
+#search {border: #d0d0d0 1px solid; border-radius: 5px; width: 200px; height: 35px; padding-inline-start: 10px;}
 .search_wrap .btn_wrap .b_btn {background: url(../../images/search.svg) no-repeat 50% 50% / 20px 20px, #e3e3e3 ; width: 40px; height: 35px; border-radius: 5px; opacity: 0.5;}
         /* Sub contents  > main conts > search css end*/
 
         /* Sub contents  > main conts > table css start*/
-.sub_table_conts {margin-top: 15px; border-top: #222222 solid 1px;}
+.sub_table_conts {margin-top: 15px; border-top: #222222 solid 1px; width: 100%;}
 table {width: 100%;}
 colgroup {width: 100%;}
 thead {background-color: #eff0f0; height: 55px;  border-bottom: #dbdbdb 1px solid; width: 100%;}
 thead tr th {font-size: 14px; letter-spacing: 0px; line-height: 67px; text-transform: uppercase; color: #222222; font-weight: 500; text-align: center;}
+tbody {width: 100%;}
 tbody tr {height: 65px; border-bottom: #dbdbdb 1px solid;}
 tbody tr td {font-size: 14px; letter-spacing: 0px; line-height: 67px; text-transform: uppercase; color: #222222; font-weight: 400; text-align: center;}
 tbody tr td:first-child {text-align: start;}
