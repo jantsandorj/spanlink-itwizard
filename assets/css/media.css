@@ -28,10 +28,10 @@
     .menu {gap: 5px;}
     .side_wrap {width: 0; height: 0;}
     nav ul {gap: 0px;}
-    nav ul li a {font-size: 0.9rem; }
+    nav ul li a {font-size: 0.9rem; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; padding: 10px 10px;}
     nav ul li:last-child a { display: flex; align-items: center; gap:3px}
-    .b_btns {width: fit-content; height: fit-content; padding: 10px 15px; border-radius: 5px;}
-    .b_btns span {font-size: 0.8rem;}
+    .b_btns {width: fit-content; height: fit-content; padding: 10px 10px; border-radius: 5px;}
+    .b_btns span {font-size: 0.8rem; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
     .banner-wrap {background:#f6624f; height: 300px;}
     .banner-title h1 {font-size: 1.5rem; line-height: 2rem;}
     .banner-title h1:first-child {font-size: 1.5rem;}
@@ -197,17 +197,30 @@
     .sub_side_menu_wrap {padding-left: 25px;}
     .sub_side_menu_wrap h2{white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
     .sub_conts_wrap {width: 100%; padding-right: 25px;}
-    }
-    @media (max-width: 1000.98px) {
-    ​.sub_conts_wrap {width: 100%; padding-right: 25px;}
-    .sub_side_menu_wrap {padding-left: 25px;}
+}
+@media (max-width: 1000.98px) {
+    .sub_conts .container{gap: 30px;}
+    .sub_side_menu_wrap {padding-left: 40px;}
+    .sub_side_menu_wrap h2{font-size: 1rem; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+    .sub_side_menu .lists li a {font-size: 0.8rem; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+    .sub_conts_wrap {padding-right: 40px; width: 100%;}
+    .sub_conts_wrap h2 {font-size: 1rem;}
+    .sel_wrap select {font-size: 0.8rem}
+    .date_header {padding: 0 10px;}
+    .date_picker .date_input {position: relative; height: 35px; width: 100%;}
+    .date_input .filter_date {width: 150px; padding-inline-start: 20px;}
+    .date_input .filter_date {font-size: 0.8rem;}
+    table thead tr th {font-size: 0.8rem;}
+    table tbody tr td {font-size: 0.8rem; letter-spacing: -1px; line-height: 35px; }    
+    tbody tr {height: auto;}
+    table tbody tr td:first-child{white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
     }
     @media (max-width: 767.98px) {
-    ​
+    ​   .sub_conts .container {flex-direction: column;}
     }
-    @media (max-width: 575.98px) {
+    /* @media (max-width: 575.98px) {
     ​
     }
     @media screen and (max-width: 483px) {
     ​
-    }
+    } */
