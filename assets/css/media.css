@@ -86,10 +86,11 @@
     .header-wrap {position: relative;}
     #side_menu {height: 100%; width: 0px; position: fixed; z-index: 5; top: 0; right: 0; overflow-x: hidden; transition: 0.5s; flex-direction: column; align-items: end; justify-content: flex-start; gap: 0;}
     #side_menu:before { z-index: -1; content: ''; position: absolute; opacity: 0.5; width: 100%; height: 100%; background-color: #222222;}
+    .link_hover:hover {padding-inline-start: 30px;}
     #close_btn {height: auto; width: 100%; position: absolute; top: 20px; left: -20px; color: #222222; text-align: end}
     .skip {width: 60%; transition: 0s; background-color: #cfe4ff; padding: 80px 20px 10px ; box-sizing: border-box;}
     .skip .lists {flex-direction: column; width: 100%; align-items: end; color: #fff; gap: 10px;}
-    .skip .list_item {border: 1px #222222 solid; padding: 8px 10px; border-radius: 10px; width: 100%; transition: 0s;}
+    .skip .list_item {border: 1px #222222 solid; width: 100%; transition: 1s; transition-delay: 0.35s; line-height: 2rem;}
     .registration {flex-direction: column; height: 100%; width: 60%; align-items: flex-end; background-color: #cfe4ff; padding: 0 20px;}
     .registration .b_btns {width: 100%; justify-content: end;}
     .menu_hamburger {display: block;}
