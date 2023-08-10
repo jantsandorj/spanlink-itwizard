@@ -118,11 +118,6 @@ window.addEventListener("scroll", function () {
     incEltNbr("percent_2");
     incEltNbr("percent_3");
     activated = true;
-  } else if (
-    this.scrollY < container.offsetTop - container.offsetHeight - 500 ||
-    (this.scrollY === 0 && activated === true)
-  ) {
-    activated = false;
   }
 });
 /* Counter on scrol down start */
