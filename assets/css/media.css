@@ -164,7 +164,7 @@
 }
 @media screen and (max-width: 483px) {
     ​.menu_hamburger {display: block;}
-    .header-wrap {padding: 0 40px;}
+    .header-wrap {padding: 0 10px;}
     .banner-wrap {height: fit-content; padding: 20px 40px;}
     .banner-inner {width: 100%; padding: 0;}
     .banner-static {width: 100%;}
@@ -230,17 +230,38 @@
     }
     @media (max-width: 575.98px) {
         .sub_conts_wrap .date_header {flex-direction: column;}
-        .sub_conts_wrap .date_header {height: auto; padding: 10px ;}
-        .date_header .date_picker {flex-direction: column; gap: 10px;}
-        .date_picker .mid_hyphen {display: none;}
+        .sub_conts_wrap .date_header {height: auto; padding: 10px 0;}
+        .sub_conts_wrap .date_header .sel_wrap, .dropdown_sel_wrap {width: 100%; padding: 0 10%;}
+        .sub_conts_wrap .date_header .sel_wrap .sel_item {padding: 0 10%;}
+        .date_input .filter_date {width: 100%; padding-inline-start: 10px;}
+        .date_icon {margin-right: 10px;}
+        .sub_conts_wrap .date_header .sel_wrap::after{right: 20%;}
+        .date_picker {width: 100%; padding: 0 10%; justify-content: space-between;}
         .sub_conts_wrap .search_filter {flex-direction: column; padding-top: 15px; align-items: center;}
+        .dropdown_sel_wrap {justify-content: space-between;}
+        .sub_conts_wrap .search_filter .sel_wrap {width: 48%;}
+        .search_wrap {width: 100%; padding: 0 10%;}
+        #search {flex: 1 1 auto;}
         .payment_date, .invoice_date {font-size: 0.6rem;}
         .payment_status {width: fit-content;}
         .sub_conts_wrap tbody tr .payment_status span {width: 100%; padding: 0 5px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
     }   
     @media screen and (max-width: 483px) {
+        .sub_side_menu_wrap,
+        .sub_conts_wrap {padding: 0 10px;}
         .sub_conts_wrap thead tr th {white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
         .sub_conts_wrap .payment {white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
         .sub_conts_wrap .payment_date {white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
         .sub_table_conts .paging_conts {padding: 25px; margin: 0;}
+        .date_picker {flex-wrap: wrap;}
+        .date_picker .mid_hyphen {display: none;}
+        .date_picker .date_input {width: 100%;}
+        .search_wrap #search {width: 0;}
+        thead tr th:nth-child(3), thead tr th:nth-child(4), thead tr th:nth-child(5) {display: none;}
+        tbody tr td:nth-child(3), tbody tr td:nth-child(4), tbody tr td:nth-child(5) {display: none;}
+        tbody tr td:nth-child(1) {width: 40%;}
+        tbody tr td:nth-child(6) {width: 35%;}
+        tbody tr td:nth-child(2) {width: 5%;}
+        tbody tr td:nth-child(7) {width: 20%;}
+        tbody tr td:nth-child(6) {white-space: nowrap;}
     }
