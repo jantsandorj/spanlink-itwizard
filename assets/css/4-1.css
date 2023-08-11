@@ -1,0 +1,4 @@
+.side_menu_wrap {padding-top: 45px;}
+.date_search {background-color: #EBDEFA;height: 72px; width: 100%; border-radius: 8px; display: flex; align-items: center; justify-content: center; gap: 10px;}
+.calendar_icon::after {content: url(../../images/calend.png); width: 21px;}
+.active {font-weight: 700;}
