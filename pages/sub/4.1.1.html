@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta name="title" content="Project Name" />
+        <meta name="keywords" content="Project Name" />
+        <meta name="description" content="Project Name" />
+
+        <title>Project Name</title>
+
+        <!-- Style -->
+        <link rel="stylesheet" type="text/css" href="../../assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../../assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="../../assets/css/common.css">
+        <link rel="stylesheet" type="text/css" href="../../assets/css/media.css">
+        <link rel="stylesheet" type="text/css" href="../../assets/css/4-1-1.css">
+
+    </head>
+    <body>
+        <!-- GNB -->
+        <header id="head" class="head">
+            <div class="header-wrap container">
+                <div>
+                    <a href="#" class="logo">Tagoplus</a>
+                </div>
+                <div class="menu_hamburger" onclick="openNav()" class="close_btn">
+                    <input type="checkbox" id="hamburger">
+                    <label for="hamburger" class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </label>
+                </div>
+                <div class="menu" id="side_menu">
+                    <nav class="skip">
+                        <ul class="lists">
+                            <li class="list_item"><a href="#" class="from-left link_hover">서비스 소개</a></li>
+                            <li class="list_item"><a href="#" class="from-left link_hover">퍼블리싱의 뢰</a></li>
+                            <li class="list_item"><a href="#" class="from-left link_hover">포트폴리오</a></li>
+                            <li class="list_item"><a href="#" class="from-left link_hover">고객센터</a></li>
+                            <li class="list_item">
+                                <a href="#" class="from-left link_hover">
+                                    <img src="../../images/profile.png" alt="Profile template" />
+                                    마이페이지
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="registration">
+                        <button class="b_btns"><span>로그인</span></button>
+                        <button class="b_btns"><span>회원가입</span></button>
+                    </div>
+                    <div id="close_btn" style="display: none;">
+                        <span onclick="closeNav()">&#x2715</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //GNB -->
+
+        <section id="subConts" class="sub_conts">
+            <div class="container">
+                <!-- Side menu -->
+                <div class="side_menu_wrap">
+                    <h2 class="active side_menu_ttl">고객센터</h2>
+                    <div class="side_menu">
+                        <ul class="lists">
+                            <li><a class="active side_menu_el" href="#">공지게시판 </a></li>
+                            <li><a class="side_menu_el" href="#">자주묻는질문</a></li>
+                            <li><a class="side_menu_el" href="#">질문과답</a></li>
+                            <li><a class="side_menu_el" href="#">후기게시판</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //Side menu -->
+                <!-- Content -->
+                <div class="conts_wrap">
+                    <h2 class="sub_conts_ttl_4 active">공지게시판</h2>
+                    <div class="view_module text_12">
+                        <div class="module_ttl border_btm">
+                            <h4>제목</h4>
+                            <p>5월 1일 근로자의 날 휴무 안내</p>
+                        </div>
+                        <div class="module_info border_btm">
+                            <div class="wrapper">
+                                <h4>작성자</h4>
+                                <p class="writer">TAGOPLUS</p>
+                            </div>
+                            <div class="wrapper">
+                                <h4>작성일</h4>
+                                <p>2023-04-18</p>
+                            </div>
+                        </div>
+                        <div class="module_desc border_btm">안녕하세요. 타고플러스입니다. <br/> 근로자의 날에는 휴무입니다. <br/>문의사항 있으실 경우 홈페이지 하단의 메일이나 게시판으로 문의 부탁드립니다. <br/> 감사합니다.<br/></div>
+                        <div class="btn_wrap">
+                            <button class="b_btn">목록</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- //Content -->
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer_wrap container">
+                <div class="contact">
+                    <p>서울 금천구 가산디지털1로 5대륭테크노타운20차 402호</p>
+                    <p>TEL : 1644-5805</p>
+                </div>
+                <div class="contact">
+                    <p>사업자등록번호 : 113-86-13483</p>
+                    <p>통신판매번호 : 구로 제 2008-00086호</p>
+                    <p>대표 : 문양희</p>
+                    <p>개인정보관리책임자 : 조원호</p>
+                </div>
+                <div class="copyright">
+                    <p>Copyright @ 2008 타고플러스. All Right Reserved</p>
+                </div>
+            </div>
+        </footer>
+        <!-- //Footer -->
+    </body>
+
+    <!-- Script -->
+    <!-- <script src="../../assets/js/common.js"></script> -->
+    <script src="../../assets/js/sub.js"></script>
+    <script src="../../assets/js/contents.js"></script>
+</html>

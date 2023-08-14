@@ -16,7 +16,6 @@
         <link rel="stylesheet" type="text/css" href="../../assets/css/common.css">
         <link rel="stylesheet" type="text/css" href="../../assets/css/media.css">
         <link rel="stylesheet" type="text/css" href="../../assets/css/4-1.css">
-        <link rel="stylesheet" type="text/css" href="../../assets/css/sub.css">
 
     </head>
     <body>
@@ -65,10 +64,10 @@
             <div class="container">
                 <!-- Side menu -->
                 <div class="side_menu_wrap">
-                    <h2>고객센터</h2>
-                    <div class="sub_side_menu">
+                    <h2 class="active side_menu_ttl">고객센터</h2>
+                    <div class="side_menu">
                         <ul class="lists">
-                            <li><a class="side_menu_el" href="#">공지게시판 </a></li>
+                            <li><a class="active side_menu_el" href="#">공지게시판 </a></li>
                             <li><a class="side_menu_el" href="#">자주묻는질문</a></li>
                             <li><a class="side_menu_el" href="#">질문과답</a></li>
                             <li><a class="side_menu_el" href="#">후기게시판</a></li>
@@ -77,59 +76,52 @@
                 </div>
                 <!-- //Side menu -->
                 <!-- Content -->
-                <div class="sub_conts_wrap">
-                    <h2 class="sub_conts_ttl">공지게시판</h2>
+                <div class="conts_wrap">
+                    <h2 class="sub_conts_ttl_4 active">공지게시판</h2>
                     <div class="date_search">
                         <div class="sel_wrap">
-                            <select class="ui_selectbox sel_item" data-title="옵션선택">
+                            <select class="sel_item text_14" data-title="옵션선택">
                                 <option selected="">전체</option>
                                 <option>item1</option>
                             </select>
                         </div>
-                        <div class="date_picker">
+                        <div class="date_picker text_14">
                             <div class="date_input">
                                 <input type="date" id="start_date" name="start_date" class="filter_date" value="2023-05-15">
                                 <span class="calendar_icon"></span>
                             </div>
-                            <span class="mid_hyphen"> - </span>
                             <div class="date_input">
                                 <input type="date" id="start_date" name="start_date" class="filter_date" value="2023-04-14">
                                 <span class="calendar_icon"></span>
                             </div>
                         </div>
                     </div>
-                    <div class="search_filter">
-                        <div class="dropdown_sel_wrap">
-                            <div class="sel_wrap">
-                                <select class="ui_selectbox sel_item" data-title="옵션선택">
-                                    <option selected="">전체</option>
-                                    <option>item1</option>
-                                </select>
-                            </div>
-                            <div class="sel_wrap">
-                                <select class="ui_selectbox sel_item" data-title="옵션선택">
-                                    <option selected="">전체</option>
-                                    <option>item1</option>
-                                </select>
-                            </div>
+                    <div class="search_filter">            
+                        <div class="sel_wrap">
+                            <select class="sel_item" data-title="옵션선택">
+                                <option selected="">전체</option>
+                                <option>item1</option>
+                            </select>
                         </div>
-                        <div class="search_wrap">
-                            <input type="text" id="search" name="search">
-                            <div class="btn_wrap">
-                                <button class="b_btn"></button>
-                            </div>
+                        <div class="sel_wrap">
+                            <select class="sel_item" data-title="옵션선택">
+                                <option selected="">전체</option>
+                                <option>item1</option>
+                            </select>
+                        </div>
+                        <input type="text" id="search" name="search">
+                        <div class="btn_wrap">
+                            <button class="b_btn"></button>
                         </div>
                     </div>
                     <div class="sub_table_conts">
-                            <table>
+                            <table class="text_12">
                                 <colgroup>
-                                    <col width="22%" span="1" style="text-align: start;">
-                                        <col width="10%" span="1">
+                                    <col width="10%" span="1" style="text-align: start;">
+                                        <col width="30%" span="1">
                                             <col width="16%" span="1">
                                                 <col width="16%" span="1">
-                                                    <col width="16%" span="1">
-                                                        <col width="14%" span="1">
-                                                            <col width="10%" span="1">
+                                                    
                                 </colgroup>
                                 <thead>
                                     <tr>
@@ -184,8 +176,8 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <div class="paging_conts">
-                                <a href="javascript:void(0);">1</a>
+                            <div class="paging_conts text_12">
+                                <a class="active_link" href="javascript:void(0);">1</a>
                                 <a href="javascript:void(0);">2</a>                                
                             </div>
                     </div>    
